@@ -110,4 +110,6 @@ The subscription is configured to send an email to a mail ID and also trigger th
 ![image](https://user-images.githubusercontent.com/116367662/231955448-2f7b79b7-e139-4f2e-80cf-e5ab8256cc2d.png)
 
  
-
+ ## LinkedIn Post 
+ 
+ - [https://www.linkedin.com/posts/rjs-balajee-389a8215a_github-balajeerjsawslambda-activity-7052605552350154753-VOw8?utm_source=share&utm_medium=member_desktop](https://www.linkedin.com/posts/rjs-balajee-389a8215a_github-balajeerjsawslambda-activity-7052605552350154753-VOw8?utm_source=share&utm_medium=member_desktop)
