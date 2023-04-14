@@ -35,6 +35,22 @@ Slacknotifier folder lambda_function.py is used to send error message to Slack c
 
 ![image](https://user-images.githubusercontent.com/116367662/231854811-a395becd-dd31-4cd1-9684-fc953a6e4029.png)
 
+**Important points to note:** 
+
+1. While running your code in AWS Lambda, python libraries other than the few standard python libraries (example: boto3) need to be uploaded as folders along with your lambda function code.
+
+![image](https://user-images.githubusercontent.com/116367662/231961903-0e0d8a24-2a82-43ae-b903-ad249ed1dafd.png)
+
+2. Always  keep your code file name as **lambda_function.py** and default function name as **lambda_handler**. If not, it needs to be changed in **Runtime settings**.
+
+![image](https://user-images.githubusercontent.com/116367662/231962603-f8bda053-b713-4cf2-a17b-615490e92bbb.png)
+
+![image](https://user-images.githubusercontent.com/116367662/231963045-fc97319d-ae0b-4d8d-a849-825fc02d0beb.png)
+
+
+
+
+
 ## AWS Cloudwatch Event
  The Event is configured to trigger Open API lambda function for every 1 minute
  
