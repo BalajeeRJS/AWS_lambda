@@ -5,7 +5,7 @@ This project is designed using AWS Lambda and AWS Cloudwatch for an automatic da
 ## Tech Stack
 
 **Language:** Python\
-**Libraries:** requests,mysql-connector-python\
+**Libraries:** requests,mysql-connector-python,boto3\
 **SQL Database:**: AWS RDS MySQL\
 **Amazon Web Service**: AWS Cloudwatch, AWS SNS, AWS lambda
 
@@ -43,9 +43,9 @@ Slacknotifier folder lambda_function.py is used to send error message to Slack c
 
  
 ## AWS Cloudwatch Alarm
- This Alarm is configured to monitor Open API lambda function for a period of every 1 minute  and trigger AWS SNS if Open API lambda function throws an error.
+This Alarm is configured to monitor the Open API lambda function for a period of every 1 minute and trigger AWS SNS if the Open API lambda function throws an error.
  
- ![image](https://user-images.githubusercontent.com/116367662/231860786-8607aafc-5721-45f4-9d7a-b807a47b2855.png)
+![image](https://user-images.githubusercontent.com/116367662/231951720-ece506e8-f1bf-4bea-822c-b6c9b26f2c3d.png)
 
  
 ## Amazon Simple Notification Service
@@ -53,19 +53,25 @@ The subscription is configured to send an email to a mail ID and also trigger th
   
  ![image](https://user-images.githubusercontent.com/116367662/231860446-07599727-7a95-4c84-b9ca-6c483d403cea.png)
  
- ![image](https://user-images.githubusercontent.com/116367662/231861676-b9cd177f-20b8-4de5-9e13-9ce048b880ac.png)
+ ![image](https://user-images.githubusercontent.com/116367662/231952463-a65b422c-016c-4045-aee2-efbde6b06704.png)
 
 
  
  ## Error Messages
+ In AWS Cloudwatch Alarm 
+ 
+![image](https://user-images.githubusercontent.com/116367662/231954562-581a3dde-4110-4a44-8ab5-76fb43e3c6ee.png)
+
  
  In SLACK Channel
  
- ![image](https://user-images.githubusercontent.com/116367662/231860015-0c3309b3-65d1-4a3d-a7bb-09a50d650264.png)
+![image](https://user-images.githubusercontent.com/116367662/231953372-fde6da13-1503-49f8-9a7e-1de12839a211.png)
+
  
  In Email 
  
-![image](https://user-images.githubusercontent.com/116367662/231860129-f6696f59-f6d1-4408-90e8-2f0c4d468cb9.png)
+![image](https://user-images.githubusercontent.com/116367662/231953607-f724b147-1f68-491b-a0f6-47088f37195a.png)
+
 
  
 ## WORKFLOW
@@ -73,5 +79,15 @@ The subscription is configured to send an email to a mail ID and also trigger th
  2. AWS Cloudwatch Alarm will monitor Open API lambda function for a period of every 1 minute.
  3. AWS Cloudwatch Alarm will trigger AWS SNS if Open API lambda function throws an error.
  4. AWS SNS send an email to a mail ID and also trigger the Slacknotifier lambda function to send messages to a Slack channel.
+ 
+##Sample Results :
+
+ ** Data stored in My SQL database at 11:36 AM**
+ ![image](https://user-images.githubusercontent.com/116367662/231955385-9d638e1f-6cbd-442e-8b1c-c5cbbad84162.png)
+
+
+**Data stored in My SQL database at 11:37 AM**
+![image](https://user-images.githubusercontent.com/116367662/231955448-2f7b79b7-e139-4f2e-80cf-e5ab8256cc2d.png)
+
  
 
