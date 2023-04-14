@@ -10,8 +10,7 @@ This project is designed using AWS Lambda and AWS Cloudwatch for an automatic da
 **Amazon Web Service**: AWS Cloudwatch, AWS SNS, AWS lambda
 
 ## Storing and Fetching  data in AWS RDS MySQL Database
-The data are fetched from - [API](http://api.open-notify.org/iss-now.json) using **requests** python library.
-The Fetched data from API are stored to AWS MySQL database using **mysql-connector-python** python library.
+The data are fetched from - [API](http://api.open-notify.org/iss-now.json) using **requests** python library.The fetched data from API are then stored to AWS MySQL database using **mysql-connector-python** python library.
 
 ## Database Configuration
 
@@ -80,13 +79,17 @@ The subscription is configured to send an email to a mail ID and also trigger th
  3. AWS Cloudwatch Alarm will trigger AWS SNS if Open API lambda function throws an error.
  4. AWS SNS send an email to a mail ID and also trigger the Slacknotifier lambda function to send messages to a Slack channel.
  
-##Sample Results :
+## Sample Results :
 
- ** Data stored in My SQL database at 11:36 AM**
+ **Data stored in My SQL database at 11:36 AM**
+ 
+ 
  ![image](https://user-images.githubusercontent.com/116367662/231955385-9d638e1f-6cbd-442e-8b1c-c5cbbad84162.png)
 
 
 **Data stored in My SQL database at 11:37 AM**
+
+
 ![image](https://user-images.githubusercontent.com/116367662/231955448-2f7b79b7-e139-4f2e-80cf-e5ab8256cc2d.png)
 
  
