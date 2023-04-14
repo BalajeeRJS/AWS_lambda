@@ -43,7 +43,8 @@ Slacknotifier folder lambda_function.py is used to send error message to Slack c
 
 2. Always  keep your code file name as **lambda_function.py** and default function name as **lambda_handler**. If not, it needs to be changed in **Runtime settings**.
 
-![image](https://user-images.githubusercontent.com/116367662/231962603-f8bda053-b713-4cf2-a17b-615490e92bbb.png)
+![image](https://user-images.githubusercontent.com/116367662/232031615-8f9e5bc6-a7a0-4925-b415-04f6d6884554.png)
+
 
 ![image](https://user-images.githubusercontent.com/116367662/231963045-fc97319d-ae0b-4d8d-a849-825fc02d0beb.png)
 
